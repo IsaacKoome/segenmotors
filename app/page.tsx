@@ -111,7 +111,7 @@ export default function HomePage() {
         </p>
         <Link href="/about" passHref>
           <Button variant="link" className="text-blue-600 text-lg hover:text-blue-800">
-            Learn More About Us
+            Learn More About Us - Segen Motors
           </Button>
         </Link>
       </section>
