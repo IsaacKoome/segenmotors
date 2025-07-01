@@ -97,7 +97,7 @@ export default function HomePage() {
         <div className="text-center mt-10">
           <Link href="/inventory" passHref>
             <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-3 text-lg">
-              View All Inventory →
+              View All Cars Available →
             </Button>
           </Link>
         </div>
@@ -107,7 +107,7 @@ export default function HomePage() {
       <section className="text-center py-16 bg-gray-100 rounded-lg shadow-md mb-12">
         <h2 className="text-3xl font-bold mb-4">Why Choose Segen Motors?</h2>
         <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
-          We pride ourselves on offering **quality used cars**, **transparent pricing**, and **exceptional customer service**. Your satisfaction is our priority.
+          We pride ourselves on offering **quality cars**, **transparent pricing**, and **exceptional customer service**. Your satisfaction is our priority.
         </p>
         <Link href="/about" passHref>
           <Button variant="link" className="text-blue-600 text-lg hover:text-blue-800">
