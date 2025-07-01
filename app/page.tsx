@@ -22,7 +22,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <Image
-              src="/cars/car1.jpg"
+              src="/public/premio.jpg"
               alt="Toyota Premio"
               width={400}
               height={250}

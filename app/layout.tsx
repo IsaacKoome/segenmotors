@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-gray-100 text-gray-800">
         <header className="bg-white shadow-md">
           <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-            <Link href="/" className="text-xl font-bold text-blue-600">Car Yard</Link>
+            <Link href="/" className="text-xl font-bold text-blue-600">Segen Motors</Link>
             <nav className="space-x-4">
               <Link href="/" className="hover:text-blue-500">Home</Link>
               <Link href="/inventory" className="hover:text-blue-500">Inventory</Link>
