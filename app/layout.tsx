@@ -33,14 +33,20 @@ export default function RootLayout({
               <Image
                 src="/logo.webp" // Path to your logo in the public folder
                 alt="Segen Motors Logo"
-                width={180} // Adjust width as needed for your logo's design and desired size
-                height={50} // Adjust height as needed, maintain aspect ratio or set to 'auto' for responsive
-                className="h-auto" // Ensures image scales responsively while maintaining aspect ratio
+                // *** IMPORTANT FIX: Adjust these width and height values ***
+                // Based on your screenshot, the logo is taller than it is wide.
+                // Let's try to set a reasonable height and let Next.js calculate width
+                // or provide specific small dimensions.
+                // I'm aiming for a height similar to the previous text's visual size.
+                height={60} // Adjusted height - this is key!
+                width={120} // Adjusted width - approximate based on aspect ratio from screenshot
+                className="object-contain" // Ensures the entire image is visible within the given dimensions
                 priority // Preload the logo as it's critical for LCP
               />
             </Link>
 
-            <nav className="flex space-x-6">
+            {/* Added mr-auto to push nav to right on small screens if logo is short */}
+            <nav className="flex space-x-6 mt-3 sm:mt-0">
               <Link href="/" className="text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200">
                 Home
               </Link>
