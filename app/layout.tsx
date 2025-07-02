@@ -31,7 +31,7 @@ export default function RootLayout({
           <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
             <Link href="/" className="flex items-center" aria-label="Segen Motors Home">
               <Image
-                src="/logo.webp" // Path to your logo in the public folder
+                src="/logo3.jpg" // Path to your logo in the public folder
                 alt="Segen Motors Logo"
                 height={60} // Adjusted height
                 width={120} // Adjusted width
