@@ -26,26 +26,20 @@ export default function RootLayout({
   return (
     <html lang="en" className={poppins.variable}>
       <body className={cn("bg-gray-50 text-gray-900 font-sans")}>
-        <header className="bg-white shadow-lg sticky top-0 z-50">
+        {/* REMOVED 'sticky top-0 z-50' from the header */}
+        <header className="bg-white shadow-lg">
           <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
-            {/* Replaced 'Segen Motors' text with Image component for the logo */}
             <Link href="/" className="flex items-center" aria-label="Segen Motors Home">
               <Image
                 src="/logo.webp" // Path to your logo in the public folder
                 alt="Segen Motors Logo"
-                // *** IMPORTANT FIX: Adjust these width and height values ***
-                // Based on your screenshot, the logo is taller than it is wide.
-                // Let's try to set a reasonable height and let Next.js calculate width
-                // or provide specific small dimensions.
-                // I'm aiming for a height similar to the previous text's visual size.
-                height={60} // Adjusted height - this is key!
-                width={120} // Adjusted width - approximate based on aspect ratio from screenshot
-                className="object-contain" // Ensures the entire image is visible within the given dimensions
-                priority // Preload the logo as it's critical for LCP
+                height={60} // Adjusted height
+                width={120} // Adjusted width
+                className="object-contain"
+                priority
               />
             </Link>
 
-            {/* Added mr-auto to push nav to right on small screens if logo is short */}
             <nav className="flex space-x-6 mt-3 sm:mt-0">
               <Link href="/" className="text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200">
                 Home
