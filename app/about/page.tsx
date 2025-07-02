@@ -3,7 +3,10 @@
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4 text-blue-700">About Segen Motors</h1>
+      <h1 className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-gray-900">
+  About Segen Motors
+</h1>
+
 
       <p className="text-gray-700 mb-4">
         At <strong>Segen Motors</strong>, we specialize in the buying and selling of quality pre-owned vehicles. 
@@ -23,6 +26,7 @@ export default function AboutPage() {
       <p className="text-gray-700">
         <strong>Visit us today</strong> and experience the Segen Motors difference — where trust meets value.
       </p>
+      
     </div>
   );
 }
