@@ -18,7 +18,7 @@ const featuredCars = [
    id: "1",
     name: "SUBARU IMPREZA",
     price: "1.25M",
-    imageUrl: "/cars/subaru-impreza-white.jpeg",
+    imageUrl: "/cars/white-subaru.jpeg",
     altText: "White Subaru Impreza",
     year: "2014",
     engine: "2000cc",
@@ -44,7 +44,7 @@ const featuredCars = [
     id: "4",
     name: "TOYOTA VITZ",
     price: "1.28M",
-    imageUrl: "/cars/vitz.jpeg", // Make sure you have this image
+    imageUrl: "/cars/vitz-blue.jpeg", // Make sure you have this image
     altText: "Blue Toyota Compact",
     engine: "1000cc",
     year: "2018",
