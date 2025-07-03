@@ -1,15 +1,60 @@
-// app/page.tsx
+// app/page.tsx (Updated)
 import Image from "next/image";
-import Link from "next/link"; // For the Next.js Link component (used with Shadcn Button)
-import { Button } from "@/components/ui/button"; // Assuming your Shadcn Button component
-import { Suspense } from "react"; // For loading state
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Suspense } from "react";
+import { CarCard } from "@/components/CarCard"; // Import CarCard
 
-// A simple loading spinner component
+// A simple loading spinner component (retained)
 const ImageSpinner = () => (
   <div className="absolute inset-0 flex items-center justify-center bg-gray-200 bg-opacity-75 z-10">
     <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
   </div>
 );
+
+// Define your featured car data - it can be a subset of the full inventory
+const featuredCars = [
+  {
+   id: "1",
+    name: "SUBARU IMPREZA",
+    price: "1.25M",
+    imageUrl: "/cars/subaru-impreza-white.jpeg",
+    altText: "White Subaru Impreza",
+    year: "2014",
+    engine: "2000cc",
+    mileage: "low mireage",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "Subaru-Impreza-2014",
+  },
+    {
+    id: "2",
+    name: "NISSAN ADVAN",
+    price: "480K",
+    imageUrl: "/cars/nissanadvan.jpeg",
+    altText: "Red Mazda Demio hatchback",
+    year: "2011",
+    engine: "1300cc",
+    mileage: "low mileage",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "Nissan-Advan-2011",
+  },
+   {
+    id: "4",
+    name: "TOYOTA VITZ",
+    price: "1.28M",
+    imageUrl: "/cars/vitz.jpeg", // Make sure you have this image
+    altText: "Blue Toyota Compact",
+    engine: "1000cc",
+    year: "2018",
+    mileage: "low mileage",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "Toyota-Vitz-2017",
+  },
+];
+
 
 export default function HomePage() {
   return (
@@ -29,70 +74,13 @@ export default function HomePage() {
         </Link>
       </section>
 
-      {/* Featured Cars */}
+      {/* Featured Cars - NOW USING CARCARD COMPONENT */}
       <section className="mb-12">
         <h2 className="text-3xl font-bold text-center mb-8">Featured Vehicles</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Car Card 1 */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 relative group">
-            <Suspense fallback={<ImageSpinner />}>
-              <Image
-                src="/premio.jpeg" // Updated path to public/cars
-                alt="Toyota Premio"
-                width={600} // Increased width for better quality, adjust as needed
-                height={400} // Increased height
-                className="w-full h-60 object-cover object-center group-hover:opacity-90 transition-opacity duration-300"
-                priority // Preload important images
-              />
-            </Suspense>
-            <div className="p-5">
-              <h3 className="text-xl font-bold text-gray-800 mb-1">Toyota Premio</h3>
-              <p className="text-md text-gray-600 mb-3">KES 950,000</p>
-              <Link href="/inventory/premio" passHref> {/* Example detail link */}
-                <Button variant="outline" className="w-full">View Details</Button>
-              </Link>
-            </div>
-          </div>
-
-          {/* Car Card 2 */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 relative group">
-            <Suspense fallback={<ImageSpinner />}>
-              <Image
-                src="/mazda.jpeg" // Updated path
-                alt="Mazda Demio"
-                width={600}
-                height={400}
-                className="w-full h-60 object-cover object-center group-hover:opacity-90 transition-opacity duration-300"
-              />
-            </Suspense>
-            <div className="p-5">
-              <h3 className="text-xl font-bold text-gray-800 mb-1">Mazda Demio</h3>
-              <p className="text-md text-gray-600 mb-3">KES 650,000</p>
-              <Link href="/inventory/demio" passHref>
-                <Button variant="outline" className="w-full">View Details</Button>
-              </Link>
-            </div>
-          </div>
-
-          {/* Car Card 3 */}
-          <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 relative group">
-            <Suspense fallback={<ImageSpinner />}>
-              <Image
-                src="/nissan note.jpeg" // Updated path
-                alt="Nissan Note"
-                width={600}
-                height={400}
-                className="w-full h-60 object-cover object-center group-hover:opacity-90 transition-opacity duration-300"
-              />
-            </Suspense>
-            <div className="p-5">
-              <h3 className="text-xl font-bold text-gray-800 mb-1">Nissan Note</h3>
-              <p className="text-md text-gray-600 mb-3">KES 580,000</p>
-              <Link href="/inventory/nissan-note" passHref>
-                <Button variant="outline" className="w-full">View Details</Button>
-              </Link>
-            </div>
-          </div>
+          {featuredCars.map((car) => (
+            <CarCard key={car.id} car={car} />
+          ))}
         </div>
         <div className="text-center mt-10">
           <Link href="/inventory" passHref>

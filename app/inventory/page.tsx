@@ -1,28 +1,140 @@
-// app/about/page.tsx
+// app/inventory/page.tsx
+import { CarCard } from "@/components/CarCard"; // Import your CarCard component
 
-export default function AboutPage() {
+// Define your static car data
+const cars = [
+  {
+    id: "1",
+    name: "SUBARU IMPREZA",
+    price: "1.25M",
+    imageUrl: "/cars/white-subaru.jpeg",
+    altText: "White Subaru Impreza",
+    year: "2014",
+    engine: "2000cc",
+    mileage: "low mireage",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "Subaru-Impreza-2014",
+  },
+  {
+    id: "2",
+    name: "NISSAN ADVAN",
+    price: "480K",
+    imageUrl: "/cars/nissanadvan.jpeg",
+    altText: "Red Mazda Demio hatchback",
+    year: "2011",
+    engine: "1300cc",
+    mileage: "low mileage",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "Nissan-Advan-2011",
+  },
+  {
+    id: "3",
+    name: "NISSAN NV350",
+    price: "2.8M",
+    imageUrl: "/cars/nissan-nv350.jpeg", // Assuming this is the correct path for "nissan note.jpeg"
+    altText: "White Nissan NV350 hatchback",
+    year: "2018",
+    engine: "1500cc",
+    mileage: "low mileage",
+    transmission: "Manual",
+    fuelType: "Diesel",
+    linkSlug: "Nissan-NV350-2018",
+  },
+  
+  {
+    id: "4",
+    name: "TOYOTA VITZ",
+    price: "1.28M",
+    imageUrl: "/cars/blue-vitz.jpeg", // Make sure you have this image
+    altText: "Blue Toyota Compact",
+    engine: "1000cc",
+    year: "2018",
+    mileage: "low mileage",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "Toyota-Vitz-2017",
+  },
+  {
+    id: "5",
+    name: "DAIHATSU MIRA",
+    price: "630K",
+    imageUrl: "/cars/dai-mira.jpeg", // Make sure you have this image
+    altText: "White Daihatsu Mira",
+    year: "2017",
+    engine: "650cc",
+    mileage: "low mileage",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "DAI-MIRA-2017",
+  },
+  
+  {
+    id: "6",
+    name: "NISSAN JUKE",
+    price: "1.15",
+    imageUrl: "/cars/nissan-juke.jpeg", // Make sure you have this image
+    altText: "Black Nissan Juke",
+    year: "2018",
+    engine: "1200",
+    mileage: "low mileage",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "nissan-juke-2018",
+  },
+   {
+    id: "7",
+    name: "HONDA FIT",
+    price: "1.09M",
+    imageUrl: "/cars/honda-fit.jpeg", // Make sure you have this image
+    altText: "Black Nissan Juke",
+    year: "2014",
+    engine: "1200cc",
+    mileage: "low mileage",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "Honda-Fit-2014",
+  },
+ {
+    id: "8",
+    name: "TOYOTA VITZ",
+    price: "630K",
+    imageUrl: "/cars/toyota-vitz-2012.jpeg", // Make sure you have this image
+    altText: "White Toyota Vitz",
+    year: "2012",
+    engine: "1000cc",
+    mileage: "low mileage",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "Toyota-Vitz-2012",
+  },
+  {
+    id: "9",
+    name: "SUZUKI",
+    price: "570K",
+    imageUrl: "/cars/suzuki.jpeg",
+    altText: "White Suzuki",
+    engine: "1300cc",
+    year: "2011",
+  }
+];
+
+export const metadata = {
+  title: "Segen Motors - Available Inventory",
+  description: "Explore our wide selection of quality used cars for sale.",
+};
+
+
+export default function InventoryPage() {
   return (
-    <div className="max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4 text-blue-700">About Segen Motors</h1>
-
-      <p className="text-gray-700 mb-4">
-        At <strong>Segen Motors</strong>, we specialize in the buying and selling of quality pre-owned vehicles. 
-        Based in Kenya, we are committed to offering reliable cars at fair prices while delivering excellent customer service.
-      </p>
-
-      <p className="text-gray-700 mb-4">
-        Whether you're looking to buy your first car, upgrade your ride, or sell your current vehicle, our team is here to help you 
-        through every step of the process. Our inventory includes a wide range of makes and models — all inspected and verified.
-      </p>
-
-      <p className="text-gray-700 mb-4">
-        What sets us apart is our transparency, affordability, and commitment to building long-lasting relationships with our clients. 
-        We believe every Kenyan deserves access to a dependable car, and we strive to make that possible.
-      </p>
-
-      <p className="text-gray-700">
-        <strong>Visit us today</strong> and experience the Segen Motors difference — where trust meets value.
-      </p>
+    <div className="py-8">
+      <h1 className="text-4xl font-bold text-center mb-10">Our Available Vehicles 🚗</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {cars.map((car) => (
+          <CarCard key={car.id} car={car} />
+        ))}
+      </div>
     </div>
   );
 }
