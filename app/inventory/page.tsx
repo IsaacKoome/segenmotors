@@ -33,7 +33,7 @@ const cars = [
     id: "3",
     name: "NISSAN NV350",
     price: "2.8M",
-    imageUrl: "/cars/nissan-nv350.jpeg", // Assuming this is the correct path for "nissan note.jpeg"
+    imageUrl: "/cars/nissan-NV350.jpeg", // Assuming this is the correct path for "nissan note.jpeg"
     altText: "White Nissan NV350 hatchback",
     year: "2018",
     engine: "1500cc",
@@ -47,7 +47,7 @@ const cars = [
     id: "4",
     name: "TOYOTA VITZ",
     price: "1.28M",
-    imageUrl: "/cars/blue-vitz.jpeg", // Make sure you have this image
+    imageUrl: "/cars/vitz-blue.jpeg", // Make sure you have this image
     altText: "Blue Toyota Compact",
     engine: "1000cc",
     year: "2018",
