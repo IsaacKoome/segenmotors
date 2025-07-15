@@ -45,14 +45,11 @@ export const CarCard = ({ car }: CarCardProps) => {
         {car.fuelType && <p className="text-sm text-gray-500">Fuel: {car.fuelType}</p>}
         {car.engine && <p className="text-sm text-gray-500">Engine: {car.engine}</p>} {/* Display engine if available */}
         
-        <Link href={detailLink} passHref className="block mt-4">
-          <Link href={`/inventory/${car.linkSlug}`}>
-  <Button className="bg-blue-600 text-white hover:bg-blue-700">
-    View Details →
-  </Button>
+        
+    <Link href={`/inventory/${car.linkSlug}`}>
+  <Button>View Details</Button>
 </Link>
 
-        </Link>
       </div>
     </div>
   );
