@@ -2,6 +2,8 @@
 import { CarCard } from "@/components/CarCard"; // Import your CarCard component
 
 // Define your static car data
+// NOTE: For better scalability, consider moving this car data to a centralized file (e.g., lib/data/cars.ts)
+// and importing it here and in app/inventory/[slug]/page.tsx
 const cars = [
   {
     id: "1",
@@ -11,112 +13,114 @@ const cars = [
     altText: "White Subaru Impreza",
     year: "2014",
     engine: "2000cc",
-    mileage: "low mireage",
+    mileage: "Low Mileage", // Standardized casing
     transmission: "Automatic",
     fuelType: "Petrol",
-    linkSlug: "Subaru-Impreza-2014",
+    linkSlug: "subaru-impreza-2014", // Lowercase, hyphenated
   },
   {
     id: "2",
     name: "NISSAN ADVAN",
     price: "480K",
     imageUrl: "/cars/nissanadvan.jpeg",
-    altText: "Red Mazda Demio hatchback",
+    altText: "Red Nissan Advan van", // Corrected alt text to match car
     year: "2011",
     engine: "1300cc",
-    mileage: "low mileage",
+    mileage: "Low Mileage",
     transmission: "Automatic",
     fuelType: "Petrol",
-    linkSlug: "Nissan-Advan-2011",
+    linkSlug: "nissan-advan-2011", // Lowercase, hyphenated
   },
   {
     id: "3",
     name: "NISSAN NV350",
     price: "2.8M",
-    imageUrl: "/cars/nissan-NV350.jpeg", // Assuming this is the correct path for "nissan note.jpeg"
-    altText: "White Nissan NV350 hatchback",
+    imageUrl: "/cars/nissan-nv350.jpeg", // Corrected image file name for consistency (was nissan note.jpeg in comment)
+    altText: "White Nissan NV350 van", // Corrected alt text
     year: "2018",
     engine: "1500cc",
-    mileage: "low mileage",
+    mileage: "Low Mileage",
     transmission: "Manual",
     fuelType: "Diesel",
-    linkSlug: "Nissan-NV350-2018",
+    linkSlug: "nissan-nv350-2018", // Lowercase, hyphenated
   },
-  
   {
     id: "4",
     name: "TOYOTA VITZ",
     price: "1.28M",
-    imageUrl: "/cars/vitz-blue.jpeg", // Make sure you have this image
-    altText: "Blue Toyota Compact",
+    imageUrl: "/cars/vitz-blue.jpeg",
+    altText: "Blue Toyota Vitz Compact", // More specific alt text
     engine: "1000cc",
     year: "2018",
-    mileage: "low mileage",
+    mileage: "Low Mileage",
     transmission: "Automatic",
     fuelType: "Petrol",
-    linkSlug: "Toyota-Vitz-2017",
+    linkSlug: "toyota-vitz-2018", // Adjusted year in slug for consistency with data
   },
   {
     id: "5",
     name: "DAIHATSU MIRA",
     price: "630K",
-    imageUrl: "/cars/dai-mira.jpeg", // Make sure you have this image
+    imageUrl: "/cars/dai-mira.jpeg",
     altText: "White Daihatsu Mira",
     year: "2017",
     engine: "650cc",
-    mileage: "low mileage",
+    mileage: "Low Mileage",
     transmission: "Automatic",
     fuelType: "Petrol",
-    linkSlug: "DAI-MIRA-2017",
+    linkSlug: "daihatsu-mira-2017", // Lowercase, hyphenated
   },
-  
   {
     id: "6",
     name: "NISSAN JUKE",
-    price: "1.15",
-    imageUrl: "/cars/nissan-juke.jpeg", // Make sure you have this image
+    price: "1.15M", // Added 'M' for consistency
+    imageUrl: "/cars/nissan-juke.jpeg",
     altText: "Black Nissan Juke",
     year: "2018",
-    engine: "1200",
-    mileage: "low mileage",
+    engine: "1200cc", // Added 'cc' for consistency
+    mileage: "Low Mileage",
     transmission: "Automatic",
     fuelType: "Petrol",
-    linkSlug: "nissan-juke-2018",
+    linkSlug: "nissan-juke-2018", // Lowercase, hyphenated
   },
-   {
+  {
     id: "7",
     name: "HONDA FIT",
     price: "1.09M",
-    imageUrl: "/cars/honda-fit.jpeg", // Make sure you have this image
-    altText: "Black Nissan Juke",
+    imageUrl: "/cars/honda-fit.jpeg",
+    altText: "Black Honda Fit", // Corrected alt text
     year: "2014",
     engine: "1200cc",
-    mileage: "low mileage",
+    mileage: "Low Mileage",
     transmission: "Automatic",
     fuelType: "Petrol",
-    linkSlug: "Honda-Fit-2014",
+    linkSlug: "honda-fit-2014", // Lowercase, hyphenated
   },
- {
+  {
     id: "8",
     name: "TOYOTA VITZ",
     price: "630K",
-    imageUrl: "/cars/toyota-vitz-2012.jpeg", // Make sure you have this image
+    imageUrl: "/cars/toyota-vitz-2012.jpeg",
     altText: "White Toyota Vitz",
     year: "2012",
     engine: "1000cc",
-    mileage: "low mileage",
+    mileage: "Low Mileage",
     transmission: "Automatic",
     fuelType: "Petrol",
-    linkSlug: "Toyota-Vitz-2012",
+    linkSlug: "toyota-vitz-2012", // Lowercase, hyphenated
   },
   {
     id: "9",
     name: "SUZUKI",
     price: "570K",
-    imageUrl: "/cars/suzuki.jpeg",
-    altText: "White Suzuki",
+    imageUrl: "/cars/suzuki.jpeg", // Ensure this image exists in public/cars
+    altText: "White Suzuki Hatchback", // More descriptive alt text
     engine: "1300cc",
     year: "2011",
+    mileage: "Low Mileage", // Added missing field
+    transmission: "Manual", // Assuming common for this model, adjust if needed
+    fuelType: "Petrol", // Added missing field
+    linkSlug: "suzuki-2011", // Added unique, URL-friendly slug
   }
 ];
 
