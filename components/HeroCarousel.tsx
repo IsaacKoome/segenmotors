@@ -5,21 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
-type Car = {
-  id: string;
-  name: string;
-  price: string;
-  imageUrl: string;
-  altText: string;
-  year: string;
-  engine: string;
-  mileage: string;
-  transmission: string;
-  fuelType: string;
-  linkSlug: string;
-  description?: string;
-};
+import { Car, allCars } from "@/lib/carData"; // Import the centralized data and type
 
 export const HeroCarousel = () => {
   const [cars, setCars] = useState<Car[]>([]);
@@ -38,65 +24,8 @@ export const HeroCarousel = () => {
         setCars(data);
       } catch (err) {
         console.error("Error loading cars:", err);
-        // fallback demo cars with corrected image paths
-        setCars([
-          {
-            id: "1",
-            name: "SUBARU IMPREZA",
-            price: "1.25M",
-            imageUrl: "/cars/white-subaru.jpeg",
-            altText: "White Subaru Impreza",
-            year: "2014",
-            engine: "2000cc",
-            mileage: "Low Mileage",
-            transmission: "Automatic",
-            fuelType: "Petrol",
-            linkSlug: "subaru-impreza-2014",
-            description: "Reliable and efficient sedan perfect for daily commuting"
-          },
-          {
-            id: "2",
-            name: "TOYOTA PRADO J120",
-            price: "4.8M",
-            imageUrl: "/cars/pradoj120.jpg",
-            altText: "Toyota Prado J120",
-            year: "2005",
-            engine: "3500cc",
-            mileage: "Low Mileage",
-            transmission: "Automatic",
-            fuelType: "Petrol",
-            linkSlug: "toyota-prado-j120",
-            description: "Rugged SUV built for adventure and family trips"
-          },
-          {
-            id: "3",
-            name: "MAZDA CX-5",
-            price: "2.8M",
-            imageUrl: "/cars/mazda-cx5.jpg",
-            altText: "Mazda CX-5",
-            year: "2018",
-            engine: "2500cc",
-            mileage: "Low Mileage",
-            transmission: "Automatic",
-            fuelType: "Petrol",
-            linkSlug: "mazda-cx5-2018",
-            description: "Stylish crossover with premium features and comfort"
-          },
-          {
-            id: "4",
-            name: "NISSAN X-TRAIL",
-            price: "3.2M",
-            imageUrl: "/cars/nissan-xtrail.jpg",
-            altText: "Nissan X-Trail",
-            year: "2017",
-            engine: "2500cc",
-            mileage: "Low Mileage",
-            transmission: "CVT",
-            fuelType: "Petrol",
-            linkSlug: "nissan-xtrail-2017",
-            description: "Versatile SUV with advanced safety features"
-          }
-        ]);
+        // Use the centralized fallback data instead of duplicating car definitions
+        setCars(allCars);
       }
     }
     fetchCars();

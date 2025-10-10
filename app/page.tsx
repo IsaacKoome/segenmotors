@@ -3,26 +3,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { HeroCarousel } from "@/components/HeroCarousel"; // Correct import
+import { HeroCarousel } from "@/components/HeroCarousel";
 import { Button } from "@/components/ui/button";
 import { CarCard } from "@/components/CarCard";
-
-// Types for a car object
-type Car = {
-  id: string;
-  name: string;
-  price: string;
-  imageUrl: string;
-  altText: string;
-  year: string;
-  engine: string;
-  mileage: string;
-  transmission: string;
-  fuelType: string;
-  linkSlug: string;
-};
+import { Car, allCars } from "@/lib/carData"; // Import the centralized data and type
 
 export default function HomePage() {
   const [featuredCars, setFeaturedCars] = useState<Car[]>([]);
@@ -37,48 +22,8 @@ export default function HomePage() {
         setFeaturedCars(data);
       } catch (error) {
         console.error("Error fetching featured cars:", error);
-        // fallback demo cars for featured section
-        setFeaturedCars([
-          {
-            id: "1",
-            name: "SUBARU IMPREZA",
-            price: "1.25M",
-            imageUrl: "/cars/white-subaru.jpeg",
-            altText: "White Subaru Impreza",
-            year: "2014",
-            engine: "2000cc",
-            mileage: "Low Mileage",
-            transmission: "Automatic",
-            fuelType: "Petrol",
-            linkSlug: "subaru-impreza-2014",
-          },
-          {
-            id: "2",
-            name: "TOYOTA PRADO J120",
-            price: "1.1M",
-            imageUrl: "/cars/pradoj120.jpg",
-            altText: "Black Toyota Prado",
-            year: "2005",
-            engine: "3500cc",
-            mileage: "Low Mileage",
-            transmission: "Automatic",
-            fuelType: "Petrol",
-            linkSlug: "toyota-prado-j120",
-          },
-          {
-            id: "3",
-            name: "MERCEDES-BENZ GLE 350",
-            price: "3.4M",
-            imageUrl: "/cars/benz-gle-350.avif",
-            altText: "Silver Mercedes GLE 350",
-            year: "2016",
-            engine: "2000cc",
-            mileage: "Low Mileage",
-            transmission: "Automatic",
-            fuelType: "Petrol",
-            linkSlug: "mercedes-gle-350-2020",
-          },
-        ]);
+        // Use the centralized fallback data instead of duplicating car definitions
+        setFeaturedCars(allCars);
       }
     }
 
