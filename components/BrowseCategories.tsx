@@ -1,6 +1,5 @@
 // components/BrowseCategories.tsx
 import Link from "next/link";
-import Image from "next/image";
 import { Car, Truck, Zap, Users } from "lucide-react";
 
 export const BrowseCategories = () => {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -31,26 +31,27 @@ export const HeroCarousel = () => {
     fetchCars();
   }, []);
 
-  const nextSlide = () => {
+  // Fixed: Moved functions outside of useEffect and used useCallback to prevent dependency issues
+  const nextSlide = useCallback(() => {
     if (isTransitioning || cars.length === 0) return;
     setIsTransitioning(true);
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cars.length);
     setTimeout(() => setIsTransitioning(false), 500);
-  };
+  }, [isTransitioning, cars.length]);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     if (isTransitioning || cars.length === 0) return;
     setIsTransitioning(true);
     setCurrentIndex((prevIndex) => (prevIndex - 1 + cars.length) % cars.length);
     setTimeout(() => setIsTransitioning(false), 500);
-  };
+  }, [isTransitioning, cars.length]);
 
-  const goToSlide = (index: number) => {
+  const goToSlide = useCallback((index: number) => {
     if (isTransitioning || index === currentIndex) return;
     setIsTransitioning(true);
     setCurrentIndex(index);
     setTimeout(() => setIsTransitioning(false), 500);
-  };
+  }, [isTransitioning, currentIndex]);
 
   // Touch/Swipe handlers
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -78,7 +79,7 @@ export const HeroCarousel = () => {
     touchEndX.current = 0;
   };
 
-  // Keyboard navigation
+  // Fixed: Keyboard navigation with proper dependencies
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'ArrowLeft') {
@@ -88,16 +89,19 @@ export const HeroCarousel = () => {
       }
     };
 
-    if (carouselRef.current) {
-      carouselRef.current.addEventListener('keydown', handleKeyDown);
+    // Fixed: Store current ref value to avoid stale closure
+    const currentCarouselRef = carouselRef.current;
+    
+    if (currentCarouselRef) {
+      currentCarouselRef.addEventListener('keydown', handleKeyDown);
     }
 
     return () => {
-      if (carouselRef.current) {
-        carouselRef.current.removeEventListener('keydown', handleKeyDown);
+      if (currentCarouselRef) {
+        currentCarouselRef.removeEventListener('keydown', handleKeyDown);
       }
     };
-  }, []);
+  }, [nextSlide, prevSlide]); // Fixed: Added missing dependencies
 
   if (cars.length === 0) return null;
 
@@ -126,7 +130,7 @@ export const HeroCarousel = () => {
             isTransitioning ? 'opacity-75 scale-105' : 'opacity-100 scale-100'
           }`}
           sizes="100vw"
-          onError={(e) => {
+          onError={() => {
             console.error(`Failed to load image: ${currentCar.imageUrl}`);
           }}
           onLoad={() => {

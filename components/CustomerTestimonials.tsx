@@ -53,7 +53,8 @@ export const CustomerTestimonials = () => {
             What Our Customers Say
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our satisfied customers 
+            {/* Fixed: Escaped apostrophe */}
+            Don&apos;t just take our word for it. Here&apos;s what our satisfied customers 
             have to say about their experience with Segen Motors.
           </p>
         </div>
@@ -76,7 +77,8 @@ export const CustomerTestimonials = () => {
 
               {/* Testimonial Text */}
               <blockquote className="text-gray-700 mb-6 leading-relaxed italic">
-                "{testimonial.text}"
+                {/* Fixed: Escaped quotes */}
+                &ldquo;{testimonial.text}&rdquo;
               </blockquote>
 
               {/* Customer Info */}
