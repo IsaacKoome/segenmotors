@@ -19,7 +19,7 @@ export interface Car {
 
 export const allCars: Car[] = [
   {
-    id: "1",
+    id: "2",
     name: "SUBARU IMPREZA",
     price: "1.25M",
     imageUrl: "/cars/white-subaru.jpeg",
@@ -39,7 +39,7 @@ export const allCars: Car[] = [
     ],
   },
   {
-    id: "2",
+    id: "1",
     name: "TOYOTA PRADO KBE",
     price: "880,000",
     imageUrl: "/cars/pradokbe.jpeg",
@@ -53,9 +53,22 @@ export const allCars: Car[] = [
     description: "Rugged SUV built for adventure and off-road capabilities.",
     images: [
       "/cars/pradokbe.jpeg",
-      "/cars/prado-kbe-interior.jpeg",  // You'll need to add this image
-      "/cars/prado-kbe-rear.jpeg",      // You'll need to add this image
-      "/cars/prado-kbe-side.jpeg",      // You'll need to add this image
+      "/cars/pradokbe1.jpeg",
+      "/cars/pradokbe2.jpeg",
+      "/cars/pradokbe3.jpeg",
+      "/cars/pradokbe4.jpeg",
+      "/cars/pradokbe5.jpeg",
+      "/cars/pradokbe6.jpeg",
+      "/cars/pradokbe7.jpeg",
+      "/cars/pradokbe8.jpeg",
+      "/cars/pradokbe9.jpeg",
+      "/cars/pradokbe10.jpeg",
+      "/cars/pradokbe11.jpeg",
+      "/cars/pradokbe12.jpeg",
+      "/cars/pradokbe13.jpeg",
+      "/cars/pradokbe14.jpeg",
+      "/cars/pradokbe15.jpeg", 
+
     ],
   },
   {
@@ -156,6 +169,7 @@ export const allCars: Car[] = [
       "/cars/pradoj1201.jpeg", // You'll need to add this image
       "/cars/pradoj1202.jpeg",     // You'll need to add this image
       "/cars/pradoj1203.jpeg", 
+      "/cars/pradoj1204.jpeg",
       "/cars/pradoj1205.jpeg",
       "/cars/pradoj1206.jpeg",  
       "/cars/pradoj1207.jpeg", 
