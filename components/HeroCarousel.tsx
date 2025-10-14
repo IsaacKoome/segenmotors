@@ -1,3 +1,5 @@
+// components/HeroCarousel.tsx
+
 "use client";
 
 import { useEffect, useState, useRef, useCallback } from "react";
@@ -164,7 +166,8 @@ export const HeroCarousel = () => {
               {currentCar.mileage} • {currentCar.fuelType}
             </span>
           </div>
-          <Link href={`/cars/${currentCar.linkSlug}`} passHref>
+          {/* ✅ FIXED: Changed from /cars/ to /inventory/ to match the actual route */}
+          <Link href={`/inventory/${currentCar.linkSlug}`} passHref>
             <Button
               size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"

@@ -5,7 +5,7 @@ export interface Car {
   id: string;
   name: string;
   price: string;
-  imageUrl: string;
+  imageUrl: string; // Main/thumbnail image
   altText: string;
   year: string;
   engine: string;
@@ -14,6 +14,7 @@ export interface Car {
   fuelType: string;
   linkSlug: string;
   description?: string;
+  images?: string[]; // ✅ NEW: Array of additional image URLs for gallery
 }
 
 export const allCars: Car[] = [
@@ -30,6 +31,12 @@ export const allCars: Car[] = [
     fuelType: "Petrol",
     linkSlug: "subaru-impreza-2014",
     description: "Reliable AWD sedan with sporty performance and fuel efficiency.",
+    images: [
+      "/cars/white-subaru.jpeg",
+      "/cars/subaru-impreza-interior.jpeg", // You'll need to add this image
+      "/cars/subaru-impreza-rear.jpeg",     // You'll need to add this image
+      "/cars/subaru-impreza-side.jpeg",     // You'll need to add this image
+    ],
   },
   {
     id: "2",
@@ -44,6 +51,12 @@ export const allCars: Car[] = [
     fuelType: "Diesel",
     linkSlug: "toyota-prado-kbe",
     description: "Rugged SUV built for adventure and off-road capabilities.",
+    images: [
+      "/cars/pradokbe.jpeg",
+      "/cars/prado-kbe-interior.jpeg",  // You'll need to add this image
+      "/cars/prado-kbe-rear.jpeg",      // You'll need to add this image
+      "/cars/prado-kbe-side.jpeg",      // You'll need to add this image
+    ],
   },
   {
     id: "3",
@@ -58,6 +71,12 @@ export const allCars: Car[] = [
     fuelType: "Diesel",
     linkSlug: "nv-350-2018",
     description: "Spacious commercial van ideal for business and cargo transport.",
+    images: [
+      "/cars/nv350.jpeg",
+      "/cars/nv350-interior.jpeg",   // You'll need to add this image
+      "/cars/nv350-cargo.jpeg",      // You'll need to add this image
+      "/cars/nv350-side.jpeg",       // You'll need to add this image
+    ],
   },
   {
     id: "4",
@@ -72,6 +91,12 @@ export const allCars: Car[] = [
     fuelType: "Petrol",
     linkSlug: "nissan-note-e-power-2018",
     description: "Innovative hybrid technology with excellent fuel economy.",
+    images: [
+      "/cars/nissannote.jpeg",
+      "/cars/nissan-note-interior.jpeg", // You'll need to add this image
+      "/cars/nissan-note-rear.jpeg",     // You'll need to add this image
+      "/cars/nissan-note-dashboard.jpeg", // You'll need to add this image
+    ],
   },
   {
     id: "5",
@@ -86,6 +111,12 @@ export const allCars: Car[] = [
     fuelType: "Petrol",
     linkSlug: "nissan-advan-2011",
     description: "Spacious and affordable family car ideal for city and long drives.",
+    images: [
+      "/cars/nissanadvan.jpeg",
+      "/cars/nissan-advan-interior.jpeg", // You'll need to add this image
+      "/cars/nissan-advan-rear.jpeg",     // You'll need to add this image
+      "/cars/nissan-advan-side.jpeg",     // You'll need to add this image
+    ],
   },
   {
     id: "6",
@@ -100,6 +131,12 @@ export const allCars: Car[] = [
     fuelType: "Petrol",
     linkSlug: "toyota-vitz-2018",
     description: "Compact and economical hatchback perfect for daily commuting.",
+    images: [
+      "/cars/vitz-blue.jpeg",
+      "/cars/vitz-interior.jpeg",    // You'll need to add this image
+      "/cars/vitz-rear.jpeg",        // You'll need to add this image
+      "/cars/vitz-dashboard.jpeg",   // You'll need to add this image
+    ],
   },
   {
     id: "7",
@@ -114,6 +151,12 @@ export const allCars: Car[] = [
     fuelType: "Petrol",
     linkSlug: "toyota-prado-j120",
     description: "Rugged SUV built for adventure and family trips.",
+    images: [
+      "/cars/pradoj120.jpg",
+      "/cars/prado-j120-interior.jpeg", // You'll need to add this image
+      "/cars/prado-j120-rear.jpeg",     // You'll need to add this image
+      "/cars/prado-j120-side.jpeg",     // You'll need to add this image
+    ],
   },
   {
     id: "8",
@@ -128,6 +171,12 @@ export const allCars: Car[] = [
     fuelType: "Petrol",
     linkSlug: "mazda-cx5-2018",
     description: "Stylish crossover with premium features and comfort.",
+    images: [
+      "/cars/mazda-cx5.jpg",
+      "/cars/mazda-cx5-interior.jpeg", // You'll need to add this image
+      "/cars/mazda-cx5-rear.jpeg",     // You'll need to add this image
+      "/cars/mazda-cx5-side.jpeg",     // You'll need to add this image
+    ],
   },
   {
     id: "9",
@@ -142,6 +191,12 @@ export const allCars: Car[] = [
     fuelType: "Petrol",
     linkSlug: "nissan-xtrail-2017",
     description: "Versatile SUV with advanced safety features.",
+    images: [
+      "/cars/nissan-xtrail.jpg",
+      "/cars/nissan-xtrail-interior.jpeg", // You'll need to add this image
+      "/cars/nissan-xtrail-rear.jpeg",     // You'll need to add this image
+      "/cars/nissan-xtrail-cargo.jpeg",    // You'll need to add this image
+    ],
   },
   {
     id: "10",
@@ -156,9 +211,27 @@ export const allCars: Car[] = [
     fuelType: "Petrol",
     linkSlug: "mercedes-gle-350-2020",
     description: "Luxury SUV with premium features and exceptional comfort.",
+    images: [
+      "/cars/benz-gle-350.avif",
+      "/cars/mercedes-gle-interior.jpeg", // You'll need to add this image
+      "/cars/mercedes-gle-rear.jpeg",     // You'll need to add this image
+      "/cars/mercedes-gle-dashboard.jpeg", // You'll need to add this image
+    ],
   },
 ];
 
 // Export the legacy carList for backward compatibility (if needed)
 // This can be removed once all references are updated to use allCars
 export const carList = allCars.slice(4, 7); // Nissan Advan, Toyota Vitz, Toyota Prado J120
+
+// ✅ Helper function to get a car by its linkSlug
+export function getCarBySlug(slug: string): Car | undefined {
+  return allCars.find((car) => car.linkSlug === slug);
+}
+
+// ✅ Helper function to get related cars (excluding the current one)
+export function getRelatedCars(currentCarSlug: string, limit: number = 3): Car[] {
+  return allCars
+    .filter((car) => car.linkSlug !== currentCarSlug)
+    .slice(0, limit);
+}
