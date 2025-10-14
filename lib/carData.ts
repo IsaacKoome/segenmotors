@@ -138,22 +138,33 @@ export const allCars: Car[] = [
   },
   {
     id: "5",
-    name: "NISSAN ADVAN",
-    price: "480K",
-    imageUrl: "/cars/nissanadvan.jpeg",
-    altText: "Nissan Advan Station Wagon",
-    year: "2011",
-    engine: "1300cc",
+    name: "Subaru Stella",
+    price: "790,000(Negotiable)",
+    imageUrl: "/cars/subarustella.jpeg",
+    altText: "Subaru Stella",
+    year: "2017",
+    engine: "650cc",
     mileage: "Low Mileage",
     transmission: "Automatic",
     fuelType: "Petrol",
-    linkSlug: "nissan-advan-2011",
+    linkSlug: "subaru-stella-2017",
     description: "Spacious and affordable family car ideal for city and long drives.",
     images: [
-      "/cars/nissanadvan.jpeg",
-      "/cars/nissan-advan-interior.jpeg", // You'll need to add this image
-      "/cars/nissan-advan-rear.jpeg",     // You'll need to add this image
-      "/cars/nissan-advan-side.jpeg",     // You'll need to add this image
+      "/cars/subarustella.jpeg",
+      "/cars/subarustella1.jpeg",
+      "/cars/subarustella2.jpeg",
+      "/cars/subarustella3.jpeg", 
+      "/cars/subarustella4.jpeg",
+      "/cars/subarustella5.jpeg",
+      "/cars/subarustella6.jpeg", 
+      "/cars/subarustella7.jpeg",
+      "/cars/subarustella8.jpeg",
+      "/cars/subarustella9.jpeg", 
+      "/cars/subarustella10.jpeg",
+      "/cars/subarustella11.jpeg",
+      "/cars/subarustella12.jpeg",
+      
+    
     ],
   },
   {
