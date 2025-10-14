@@ -97,9 +97,23 @@ export const allCars: Car[] = [
     description: "Spacious commercial van ideal for business and cargo transport.",
     images: [
       "/cars/nv350.jpeg",
-      "/cars/nv350-interior.jpeg",   // You'll need to add this image
-      "/cars/nv350-cargo.jpeg",      // You'll need to add this image
-      "/cars/nv350-side.jpeg",       // You'll need to add this image
+      "/cars/nv3501.jpeg",
+      "/cars/nv3502.jpeg",
+      "/cars/nv3503.jpeg",
+      "/cars/nv3504.jpeg",
+      "/cars/nv3505.jpeg",
+      "/cars/nv3506.jpeg",
+      "/cars/nv3507.jpeg",
+      "/cars/nv3508.jpeg",
+      "/cars/nv3509.jpeg",
+      "/cars/nv35010.jpeg",
+      "/cars/nv35011.jpeg",
+      "/cars/nv35012.jpeg",
+      "/cars/nv35013.jpeg",
+      "/cars/nv35014.jpeg",
+      "/cars/nv35015.jpeg",
+
+      
     ],
   },
     {
