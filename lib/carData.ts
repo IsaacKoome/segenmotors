@@ -235,6 +235,7 @@ export const allCars: Car[] = [
       "/cars/mazda-cx5-side.jpeg",     // You'll need to add this image
     ],
   },
+  
   {
     id: "9",
     name: "NISSAN X-TRAIL",
@@ -259,7 +260,7 @@ export const allCars: Car[] = [
     id: "10",
     name: "Honda Fit Hybrid",
     price: "650k",
-    imageUrl: "/cars/hondafit.jpeg",
+    imageUrl: "/cars/hondafit15.jpeg",
     altText: "White Honda Fit Hybrid",
     year: "2012",
     engine: "1300cc (Hybrid)",
@@ -269,7 +270,7 @@ export const allCars: Car[] = [
     linkSlug: "honda-fit-hybrid-2012",
     description: "Compact, stylish and reliable. Clean Inside out. Perfect for city and long drives.",
     images: [
-      "/cars/hondafit.jpeg",
+      "/cars/hondafit17.jpeg",
       "/cars/hondafit1.jpeg",
       "/cars/hondafit2.jpeg",
       "/cars/hondafit3.jpeg",
