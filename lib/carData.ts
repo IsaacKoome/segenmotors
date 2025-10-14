@@ -153,9 +153,17 @@ export const allCars: Car[] = [
     description: "Rugged SUV built for adventure and family trips.",
     images: [
       "/cars/pradoj120.jpg",
-      "/cars/prado-j120-interior.jpeg", // You'll need to add this image
-      "/cars/prado-j120-rear.jpeg",     // You'll need to add this image
-      "/cars/prado-j120-side.jpeg",     // You'll need to add this image
+      "/cars/pradoj1201.jpeg", // You'll need to add this image
+      "/cars/pradoj1202.jpeg",     // You'll need to add this image
+      "/cars/pradoj1203.jpeg", 
+      "/cars/pradoj1204.jpeg",
+      "/cars/pradoj1205.jpeg",
+      "/cars/pradoj1206.jpeg",  
+      "/cars/pradoj1207.jpeg", 
+      "/cars/pradoj1208.jpeg",
+      "/cars/pradoj1209.jpeg", 
+      "/cars/pradoj12010.jpeg",
+      "/cars/pradoj12011.jpeg",// You'll need to add this image
     ],
   },
   {
