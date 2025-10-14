@@ -19,25 +19,36 @@ export interface Car {
 
 export const allCars: Car[] = [
   {
-    id: "1",
-    name: "SUBARU IMPREZA",
+    id: "4",
+    name: "NISSAN NOTE E-POWER",
     price: "1.25M",
-    imageUrl: "/cars/white-subaru.jpeg",
-    altText: "White Subaru Impreza",
-    year: "2014",
-    engine: "2000cc",
+    imageUrl: "/cars/nissannote.jpeg",
+    altText: "Nissan Note E-power",
+    year: "2018",
+    engine: "1200cc (Hybrid)",
     mileage: "Low Mileage",
     transmission: "Automatic",
     fuelType: "Petrol",
-    linkSlug: "subaru-impreza-2014",
-    description: "Reliable AWD sedan with sporty performance and fuel efficiency.",
+    linkSlug: "nissan-note-e-power-2018",
+    description: "Innovative hybrid technology with excellent fuel economy.",
     images: [
-      "/cars/white-subaru.jpeg",
-      "/cars/subaru-impreza-interior.jpeg", // You'll need to add this image
-      "/cars/subaru-impreza-rear.jpeg",     // You'll need to add this image
-      "/cars/subaru-impreza-side.jpeg",     // You'll need to add this image
+      "/cars/nissannote.jpeg",
+      "/cars/nissannote1.jpeg",
+      "/cars/nissannote2.jpeg",
+      "/cars/nissannote3.jpeg",
+      "/cars/nissannote4.jpeg",
+      "/cars/nissannote5.jpeg",
+      "/cars/nissannote6.jpeg",
+      "/cars/nissannote7.jpeg",
+      "/cars/nissannote8.jpeg",
+      "/cars/nissannote9.jpeg",
+      "/cars/nissannote10.jpeg",
+      "/cars/nissannote11.jpeg",
+      "/cars/nissannote12.jpeg",
+      
     ],
   },
+
   {
     id: "2",
     name: "TOYOTA PRADO KBE",
@@ -91,34 +102,24 @@ export const allCars: Car[] = [
       "/cars/nv350-side.jpeg",       // You'll need to add this image
     ],
   },
-  {
-    id: "4",
-    name: "NISSAN NOTE E-POWER",
+    {
+    id: "1",
+    name: "SUBARU IMPREZA",
     price: "1.25M",
-    imageUrl: "/cars/nissannote.jpeg",
-    altText: "Nissan Note E-power",
-    year: "2018",
-    engine: "1200cc (Hybrid)",
+    imageUrl: "/cars/white-subaru.jpeg",
+    altText: "White Subaru Impreza",
+    year: "2014",
+    engine: "2000cc",
     mileage: "Low Mileage",
     transmission: "Automatic",
     fuelType: "Petrol",
-    linkSlug: "nissan-note-e-power-2018",
-    description: "Innovative hybrid technology with excellent fuel economy.",
+    linkSlug: "subaru-impreza-2014",
+    description: "Reliable AWD sedan with sporty performance and fuel efficiency.",
     images: [
-      "/cars/nissannote.jpeg",
-      "/cars/nissannote1.jpeg",
-      "/cars/nissannote2.jpeg",
-      "/cars/nissannote3.jpeg",
-      "/cars/nissannote4.jpeg",
-      "/cars/nissannote5.jpeg",
-      "/cars/nissannote6.jpeg",
-      "/cars/nissannote7.jpeg",
-      "/cars/nissannote8.jpeg",
-      "/cars/nissannote9.jpeg",
-      "/cars/nissannote10.jpeg",
-      "/cars/nissannote11.jpeg",
-      "/cars/nissannote12.jpeg",
-      
+      "/cars/white-subaru.jpeg",
+      "/cars/subaru-impreza-interior.jpeg", // You'll need to add this image
+      "/cars/subaru-impreza-rear.jpeg",     // You'll need to add this image
+      "/cars/subaru-impreza-side.jpeg",     // You'll need to add this image
     ],
   },
   {
