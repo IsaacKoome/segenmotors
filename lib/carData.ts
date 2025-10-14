@@ -19,7 +19,7 @@ export interface Car {
 
 export const allCars: Car[] = [
   {
-    id: "2",
+    id: "1",
     name: "SUBARU IMPREZA",
     price: "1.25M",
     imageUrl: "/cars/white-subaru.jpeg",
@@ -39,7 +39,7 @@ export const allCars: Car[] = [
     ],
   },
   {
-    id: "1",
+    id: "2",
     name: "TOYOTA PRADO KBE",
     price: "880,000",
     imageUrl: "/cars/pradokbe.jpeg",
@@ -106,9 +106,19 @@ export const allCars: Car[] = [
     description: "Innovative hybrid technology with excellent fuel economy.",
     images: [
       "/cars/nissannote.jpeg",
-      "/cars/nissan-note-interior.jpeg", // You'll need to add this image
-      "/cars/nissan-note-rear.jpeg",     // You'll need to add this image
-      "/cars/nissan-note-dashboard.jpeg", // You'll need to add this image
+      "/cars/nissannote1.jpeg",
+      "/cars/nissannote2.jpeg",
+      "/cars/nissannote3.jpeg",
+      "/cars/nissannote4.jpeg",
+      "/cars/nissannote5.jpeg",
+      "/cars/nissannote6.jpeg",
+      "/cars/nissannote7.jpeg",
+      "/cars/nissannote8.jpeg",
+      "/cars/nissannote9.jpeg",
+      "/cars/nissannote10.jpeg",
+      "/cars/nissannote11.jpeg",
+      "/cars/nissannote12.jpeg",
+      
     ],
   },
   {
