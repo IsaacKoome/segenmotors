@@ -141,7 +141,7 @@ export const allCars: Car[] = [
   {
     id: "7",
     name: "TOYOTA PRADO J120",
-    price: "4.8M",
+    price: "1.2M",
     imageUrl: "/cars/pradoj120.jpg",
     altText: "Toyota Prado J120",
     year: "2005",
@@ -156,7 +156,6 @@ export const allCars: Car[] = [
       "/cars/pradoj1201.jpeg", // You'll need to add this image
       "/cars/pradoj1202.jpeg",     // You'll need to add this image
       "/cars/pradoj1203.jpeg", 
-      "/cars/pradoj1204.jpeg",
       "/cars/pradoj1205.jpeg",
       "/cars/pradoj1206.jpeg",  
       "/cars/pradoj1207.jpeg", 

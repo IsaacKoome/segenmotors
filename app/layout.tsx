@@ -45,7 +45,7 @@ export default function RootLayout({
             {/* Logo */}
             <Link href="/" className="flex items-center" aria-label="Segen Motors Home">
               <Image
-                src="/logo3.jpg"
+                src="/logosegen3.jpeg"
                 alt="Segen Motors Logo"
                 height={60}
                 width={120}
