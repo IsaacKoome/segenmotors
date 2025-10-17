@@ -7,9 +7,9 @@ export interface Car {
   price: string;
   imageUrl: string; // Main/thumbnail image
   altText: string;
-  year: string;
+  year?: string;
   engine: string;
-  mileage: string;
+  mileage?: string;
   transmission: string;
   fuelType: string;
   linkSlug: string;
@@ -346,6 +346,57 @@ export const allCars: Car[] = [
 
     ],
   },
+  {
+    id: "12",
+    name: "Daihatsu Mira",
+    price: "Price drop from 650k to550k",
+    imageUrl: "/cars/daihatsumira.jpeg",
+    altText: "White Daihatsu Mira",
+    year: "2017",
+    engine: "650cc",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "daihatsu-mira-2017",
+    description: "Clean Inside out. Price is negotiable.Cars are a necessity❤️.",
+    images: [
+      "/cars/daihatsumira.jpeg",
+      "/cars/daihatsumira1.jpeg",
+      "/cars/daihatsumira2.jpeg",
+      "/cars/daihatsumira3.jpeg",
+      "/cars/daihatsumira4.jpeg",
+      "/cars/daihatsumira5.jpeg",
+      "/cars/daihatsumira6.jpeg",
+      "/cars/daihatsumira7.jpeg",
+      "/cars/daihatsumira8.jpeg",
+      "/cars/daihatsumira9.jpeg",
+      "/cars/daihatsumira10.jpeg",
+
+     
+    ],
+  },
+   {
+    id: "13",
+    name: "Toyota Coaster",
+    price: "2.4M",
+    imageUrl: "/cars/toyotacoaster.jpeg",
+    altText: "White Toyota Coaster",
+    engine: "2700cc",
+    transmission: "Manual",
+    fuelType: "Diesel",
+    linkSlug: "toyota-coaster-2017",
+    description: "Compact, stylish and reliable. By and drive. Perfect for Schools, company, tour. Ready to work. Clean Inside out. Perfect for business",
+    images: [
+      "/cars/toyotacoaster.jpeg",
+      "/cars/toyotacoaster1.jpeg",
+      "/cars/toyotacoaster2.jpeg",
+      "/cars/toyotacoaster3.jpeg",
+      "/cars/toyotacoaster4.jpeg",
+      "/cars/toyotacoaster5.jpeg",
+      "/cars/toyotacoaster6.jpeg",
+     
+    ],
+  },
+  
 ];
 
 // Export the legacy carList for backward compatibility (if needed)
