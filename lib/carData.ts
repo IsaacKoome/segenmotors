@@ -397,6 +397,40 @@ export const allCars: Car[] = [
     ],
   },
   
+   {
+    id: "14",
+    name: "Mazda Demio",
+    price: "850k",
+    imageUrl: "/cars/mazdademio.jpeg",
+    altText: "Blue Mazda Demio",
+    engine: "1300cc",
+    year: "2015",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "mazda-demio-2015",
+    description: "Stylish and reliable. Clean interiorand exterior. It has a rear camera",
+    images: [
+      "/cars/mazdademio.jpeg",
+      "/cars/mazdademio1.jpeg",
+      "/cars/mazdademio2.jpeg",
+      "/cars/mazdademio3.jpeg",
+      "/cars/mazdademio4.jpeg",
+      "/cars/mazdademio5.jpeg",
+      "/cars/mazdademio6.jpeg",
+      "/cars/mazdademio7.jpeg",
+      "/cars/mazdademio8.jpeg",
+      "/cars/mazdademio9.jpeg",
+      "/cars/mazdademio10.jpeg",
+      "/cars/mazdademio11.jpeg",
+      "/cars/mazdademio12.jpeg",
+      "/cars/mazdademio13.jpeg",
+      "/cars/mazdademio14.jpeg",
+      "/cars/mazdademio15.jpeg",
+      "/cars/mazdademio16.jpeg",
+
+    ],
+  },
+  
 ];
 
 // Export the legacy carList for backward compatibility (if needed)
