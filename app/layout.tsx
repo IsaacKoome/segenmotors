@@ -8,7 +8,7 @@ import "./globals.css";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Poppins } from "next/font/google";
-import { Menu, X } from "lucide-react";
+import { Menu, X, MessageCircle, Mail } from "lucide-react";
 
 // Configure custom font
 const poppins = Poppins({
@@ -53,6 +53,51 @@ export default function RootLayout({
                 priority
               />
             </Link>
+
+            {/* Social Media Links - Positioned between logo and navigation */}
+            <div className="hidden md:flex items-center space-x-4">
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/254759500436"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-10 h-10 bg-green-500 hover:bg-green-600 text-white rounded-full transition-all duration-200 hover:scale-110 shadow-md hover:shadow-lg"
+                aria-label="Contact us on WhatsApp"
+                title="WhatsApp: +254759500436"
+              >
+                <MessageCircle size={20} />
+              </a>
+
+              {/* TikTok */}
+              <a
+                href="https://www.tiktok.com/@segen.motor.deale"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-10 h-10 bg-black hover:bg-gray-800 text-white rounded-full transition-all duration-200 hover:scale-110 shadow-md hover:shadow-lg"
+                aria-label="Follow us on TikTok"
+                title="Follow us on TikTok"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+              </a>
+
+              {/* Email */}
+              <a
+                href="mailto:segenmotordealers51@gmail.com"
+                className="flex items-center justify-center w-10 h-10 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition-all duration-200 hover:scale-110 shadow-md hover:shadow-lg"
+                aria-label="Send us an email"
+                title="Email: segenmotordealers51@gmail.com"
+              >
+                <Mail size={20} />
+              </a>
+            </div>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-6">
@@ -112,6 +157,54 @@ export default function RootLayout({
                 >
                   About Us
                 </Link>
+
+                {/* Mobile Social Media Links */}
+                <div className="pt-4 border-t border-gray-200">
+                  <p className="text-sm font-medium text-gray-600 mb-3">Connect with us:</p>
+                  <div className="flex space-x-4">
+                    {/* WhatsApp */}
+                    <a
+                      href="https://wa.me/254759500436"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center w-10 h-10 bg-green-500 hover:bg-green-600 text-white rounded-full transition-all duration-200"
+                      aria-label="Contact us on WhatsApp"
+                      onClick={closeMobileMenu}
+                    >
+                      <MessageCircle size={20} />
+                    </a>
+
+                    {/* TikTok */}
+                    <a
+                      href="https://www.tiktok.com/@segen.motor.deale"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center w-10 h-10 bg-black hover:bg-gray-800 text-white rounded-full transition-all duration-200"
+                      aria-label="Follow us on TikTok"
+                      onClick={closeMobileMenu}
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="w-5 h-5"
+                      >
+                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                      </svg>
+                    </a>
+
+                    {/* Email */}
+                    <a
+                      href="mailto:segenmotordealers51@gmail.com"
+                      className="flex items-center justify-center w-10 h-10 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition-all duration-200"
+                      aria-label="Send us an email"
+                      onClick={closeMobileMenu}
+                    >
+                      <Mail size={20} />
+                    </a>
+                  </div>
+                </div>
               </nav>
             </div>
           )}

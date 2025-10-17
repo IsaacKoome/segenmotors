@@ -31,9 +31,6 @@ export default function ContactPage() {
           <li>
             💬 <a href="https://wa.me/254759500436" target="_blank" className="text-green-600 hover:underline">Chat on WhatsApp (0759 500 436)</a>
           </li>
-          <li>
-            💬 <a href="https://wa.me/254700119340" target="_blank" className="text-green-600 hover:underline">Chat on WhatsApp (0700 119 340)</a>
-          </li>
         </ul>
       </div>
 
