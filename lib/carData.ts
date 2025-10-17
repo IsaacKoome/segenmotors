@@ -252,7 +252,7 @@ export const allCars: Car[] = [
   {
     id: "9",
     name: "Nissan NV200",
-    price: "500,000",
+    price: "500K",
     imageUrl: "/cars/nv200.jpeg",
     altText: "Black Nissan NV200",
     year: "2014",
@@ -313,6 +313,37 @@ export const allCars: Car[] = [
       "/cars/hondafit16.jpeg",
 
      
+    ],
+  },
+  {
+    id: "11",
+    name: "Toyota Hiace Ambulance",
+    price: "5.1M",
+    imageUrl: "/cars/ambulance.jpeg",
+    altText: "Silver Toyota Hiace Ambulance",
+    year: "2016",
+    engine: "2700cc",
+    mileage: "83,000 Km",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "toyota-hiace-ambulance-2016",
+    description: "🩺 High Roof (9L) | Fully Functional | Ready for Emergency Response 🚨",
+    images: [
+      "/cars/ambulance.jpeg",
+      "/cars/ambulance1.jpeg",
+      "/cars/ambulance2.jpeg",
+      "/cars/ambulance3.jpeg",
+      "/cars/ambulance4.jpeg",
+      "/cars/ambulance5.jpeg",
+      "/cars/ambulance6.jpeg",
+      "/cars/ambulance7.jpeg",
+      "/cars/ambulance8.jpeg",
+      "/cars/ambulance9.jpeg",
+      "/cars/ambulance10.jpeg",
+      "/cars/ambulance11.jpeg",
+      "/cars/ambulance12.jpeg",
+      "/cars/ambulance13.jpeg",
+
     ],
   },
 ];
