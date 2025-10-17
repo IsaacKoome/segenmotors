@@ -408,7 +408,7 @@ export const allCars: Car[] = [
     transmission: "Automatic",
     fuelType: "Petrol",
     linkSlug: "mazda-demio-2015",
-    description: "Stylish and reliable. Clean interiorand exterior. It has a rear camera",
+    description: "Comfortable, Stylish and reliable. Clean interior and exterior With a rear camera",
     images: [
       "/cars/mazdademio.jpeg",
       "/cars/mazdademio1.jpeg",
