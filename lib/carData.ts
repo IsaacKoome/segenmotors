@@ -251,22 +251,33 @@ export const allCars: Car[] = [
   
   {
     id: "9",
-    name: "NISSAN X-TRAIL",
-    price: "3.2M",
-    imageUrl: "/cars/nissan-xtrail.jpg",
-    altText: "Nissan X-Trail",
-    year: "2017",
-    engine: "2500cc",
-    mileage: "Low Mileage",
+    name: "Nissan NV200",
+    price: "500,000",
+    imageUrl: "/cars/nv200.jpeg",
+    altText: "Black Nissan NV200",
+    year: "2014",
+    engine: "1500cc",
+    mileage: "Medium Mileage",
     transmission: "CVT",
     fuelType: "Petrol",
-    linkSlug: "nissan-xtrail-2017",
-    description: "Versatile SUV with advanced safety features.",
+    linkSlug: "nissan-nv200-2014",
+    description: "💨 Smooth Drive | 🧳 Spacious & Practical | ⛽ Super Fuel Efficient | ❄️ Functional AC.",
     images: [
-      "/cars/nissan-xtrail.jpg",
-      "/cars/nissan-xtrail-interior.jpeg", // You'll need to add this image
-      "/cars/nissan-xtrail-rear.jpeg",     // You'll need to add this image
-      "/cars/nissan-xtrail-cargo.jpeg",    // You'll need to add this image
+      "/cars/nv200.jpeg",
+      "/cars/nv2001.jpeg",
+      "/cars/nv2002.jpeg",
+      "/cars/nv2003.jpeg",
+      "/cars/nv2004.jpeg",
+      "/cars/nv2005.jpeg",
+      "/cars/nv2006.jpeg",
+      "/cars/nv2007.jpeg",
+      "/cars/nv2008.jpeg",
+      "/cars/nv2009.jpeg",
+      "/cars/nv20010.jpeg",
+      "/cars/nv20011.jpeg",
+      "/cars/nv20012.jpeg",
+      "/cars/nv20013.jpeg",
+         // You'll need to add this image
     ],
   },
   {
@@ -283,7 +294,7 @@ export const allCars: Car[] = [
     linkSlug: "honda-fit-hybrid-2012",
     description: "Compact, stylish and reliable. Clean Inside out. Perfect for city and long drives.",
     images: [
-      "/cars/hondafit16.jpeg",
+      "/cars/hondafit14.jpeg",
       "/cars/hondafit1.jpeg",
       "/cars/hondafit2.jpeg",
       "/cars/hondafit3.jpeg",
