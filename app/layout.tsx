@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Poppins } from "next/font/google";
 import { Menu, X, MessageCircle, Mail } from "lucide-react";
+import ChatWidget from "@/components/ChatWidget"; // Import the ChatWidget
 
 // Configure custom font
 const poppins = Poppins({
@@ -118,6 +119,9 @@ export default function RootLayout({
                 <Link href="/about" className="text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200">
                   About Us
                 </Link>
+                <Link href="/chat" className="text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200">
+                  Chat
+                </Link>
               </nav>
 
               {/* Mobile Menu Button */}
@@ -163,6 +167,13 @@ export default function RootLayout({
                 >
                   About Us
                 </Link>
+                <Link 
+                  href="/chat" 
+                  className="block text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200 py-2"
+                  onClick={closeMobileMenu}
+                >
+                  Chat
+                </Link>
               </nav>
             </div>
           )}
@@ -172,6 +183,9 @@ export default function RootLayout({
         <main className="container mx-auto px-4 py-8 min-h-[calc(100vh-160px)]">
           {children}
         </main>
+
+        {/* Chat Widget */}
+        <ChatWidget />
 
         {/* Footer */}
         <footer className="bg-gray-800 text-white py-6 mt-10">
