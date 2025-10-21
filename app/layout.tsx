@@ -120,7 +120,7 @@ export default function RootLayout({
                   About Us
                 </Link>
                 <Link href="/chat" className="text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200">
-                  Chat
+                  Chat with SegenAI
                 </Link>
               </nav>
 
@@ -172,7 +172,7 @@ export default function RootLayout({
                   className="block text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors duration-200 py-2"
                   onClick={closeMobileMenu}
                 >
-                  Chat
+                  Chat With SegenAI
                 </Link>
               </nav>
             </div>
