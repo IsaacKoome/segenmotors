@@ -70,7 +70,7 @@ const ChatWidget: React.FC = () => {
       {isOpen && (
         <div className="bg-white rounded-lg shadow-xl w-80 h-96 flex flex-col">
           <div className="flex justify-between items-center bg-blue-600 text-white p-3 rounded-t-lg">
-            <h3 className="text-lg font-semibold">Segen Motors Chatbot</h3>
+            <h3 className="text-lg font-semibold">Segen AI</h3>
             <button
               className="hover:text-gray-200 focus:outline-none"
               onClick={() => setIsOpen(false)}

@@ -1,3 +1,5 @@
+//app/chat/page.tsx
+
 "use client";
 
 import ChatWidget from "@/components/ChatWidget";
