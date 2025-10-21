@@ -1,11 +1,12 @@
-//app/api/chat/route.ts
 
+// app/api/chat/route.ts
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { NextResponse } from 'next/server';
+import { fullChatbotInstructions } from '@/lib/chatbotContext';
 
 export async function POST(req: Request) {
   try {
-    const { prompt } = await req.json();
+    const { prompt, history } = await req.json();
 
     if (!prompt) {
       return NextResponse.json({ error: 'Prompt is required' }, { status: 400 });
@@ -18,9 +19,16 @@ export async function POST(req: Request) {
     }
 
     const genAI = new GoogleGenerativeAI(geminiApiKey);
-    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
-    const result = await model.generateContent(prompt);
+    const chat = model.startChat({
+      history: history || [],
+      generationConfig: {
+        maxOutputTokens: 1000,
+      },
+    });
+
+    const result = await chat.sendMessage(prompt);
     const response = result.response;
     const text = response.text();
 
