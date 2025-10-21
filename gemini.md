@@ -2,3 +2,5 @@ Now we need to draft the app/chat/page.tsx UI. Instead of it appearing like in t
 You can update the chat widget also for messages to appear as so.
 
 Then proceed with the chat interface and all just like in the chat widget but feel free to add something like colors, emojis etc or something that will make user interactions with the AI easier and fun experience.
+
+The chatWidget is looking fine but the chatUI page is not. See the images in public folder that is image1 which is showing me interaction with the AI while image2 shows the chat page, honestly the UI there isn't looking so good.
