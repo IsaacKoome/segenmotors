@@ -12,7 +12,7 @@ export interface Car {
   mileage?: string;
   transmission?: string;
   fuelType?: string;
-  linkSlug?: string;
+  linkSlug: string;
   description?: string;
   images?: string[]; // ✅ NEW: Array of additional image URLs for gallery
 }
