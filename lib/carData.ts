@@ -438,7 +438,7 @@ export const allCars: Car[] = [
     altText: "Black Toyota Mark X",
     year: "2013",
     engine: "2500cc",
-    linkSlug: "toyota-mark-X-2013",
+    linkSlug: "toyota-mark-x-2013",
    description: `🎶 Premium Music System | 💻 10 Android Screen | ❄️ Functional AC
 💨 Smooth Drive | ⚡ Powerful Performance
 📍 Ridgeways, Tala Road off Kiambu Road
