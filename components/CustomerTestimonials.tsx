@@ -6,25 +6,25 @@ import { Star, Quote } from "lucide-react";
 export const CustomerTestimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Wanjiku",
-      location: "Nairobi",
+      name: "James Mwangi",
+      location: "Nakuru",
       rating: 5,
       text: "Excellent service from start to finish! The team at Segen Motors helped me find the perfect Subaru for my family. Transparent pricing and no hidden fees.",
       vehicle: "Subaru Impreza 2014",
     },
     {
-      name: "James Mwangi",
-      location: "Kiambu",
+      name: "Said Hassan",
+      location: "Mombasa",
       rating: 5,
       text: "I was impressed by their professionalism and the quality of vehicles. My Toyota Prado has been running perfectly for over a year now. Highly recommended!",
-      vehicle: "Toyota Prado J120",
+      vehicle: "Land Rover Freelander",
     },
     {
       name: "Grace Akinyi",
-      location: "Mombasa",
+      location: "Kisumu",
       rating: 5,
       text: "The financing options made it easy for me to get my dream car. The after-sales service is outstanding. Thank you Segen Motors for the excellent experience!",
-      vehicle: "Nissan Note E-Power",
+      vehicle: "Toyota Vitz 2016",
     },
   ];
 
