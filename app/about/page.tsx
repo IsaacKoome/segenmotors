@@ -45,12 +45,12 @@ const locationDetails = [
   {
     icon: MapPin,
     title: "Our Location",
-    description: "Find us conveniently located in Nairobi, Kenya. Visit our showroom to view our full inventory in person and meet our team.",
+    description: "Find us conveniently located in Along Kiambu Road in Ridgeways off Tala road. Visit our showroom to view our full inventory in person and meet our team.",
   },
   {
     icon: Clock,
     title: "Business Hours",
-    description: "We are open Monday to Saturday, 9:00 AM to 5:00 PM. We recommend scheduling an appointment for the best experience.",
+    description: "We are open Monday to Friday, 8:00 AM to 5:00 PM. Saturdays 9:30am to 4:30pm We recommend calling or messaging us beforehand for the best experience.",
   },
   {
     icon: Car,
