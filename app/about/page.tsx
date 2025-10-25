@@ -80,9 +80,8 @@ export default function AboutPage() {
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-lg text-gray-600 space-y-6">
-            
             <p>
-              From our humble beginnings, we have grown into a reputable name by focusing relentlessly on **customer satisfaction** and the meticulous inspection of every single vehicle that enters our inventory. Our commitment goes beyond the sale; we aim to build lifelong relationships with our clients.
+              Segen Motor Dealers was founded on a simple principle: to bring **transparency, quality, and trust** to the used car market in Nairobi. We recognized the need for a dealership where customers could feel confident and informed about their purchase, free from the uncertainties often associated with pre-owned vehicles.
             </p>
           </div>
           <div className="bg-gray-100 p-8 rounded-xl shadow-lg">
