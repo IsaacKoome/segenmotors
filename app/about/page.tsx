@@ -2,7 +2,7 @@ import { Shield, DollarSign, Users, Wrench, MapPin, Clock, Car } from "lucide-re
 import React from "react";
 
 // Reusable component for the feature cards
-const FeatureCard = ({ icon: Icon, title, description }: { icon: any, title: string, description: string }) => (
+const FeatureCard = ({ icon: Icon, title, description }: { icon: React.ElementType, title: string, description: string }) => (
   <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] text-center h-full flex flex-col justify-start items-center group border border-gray-100">
     <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition-colors duration-300">
       <Icon className="w-8 h-8 text-blue-600" />
@@ -87,7 +87,7 @@ export default function AboutPage() {
               From our humble beginnings, we have grown into a reputable name by focusing relentlessly on **customer satisfaction** and the meticulous inspection of every single vehicle that enters our inventory. Our commitment goes beyond the sale; we aim to build lifelong relationships with our clients.
             </p>
             <p>
-              We believe that owning a reliable car should be accessible to everyone. That's why we work hard to source the best vehicles and offer them at the most **competitive and honest prices**. Your journey starts here, with a team that genuinely cares about getting you the right set of wheels.
+              We believe that owning a reliable car should be accessible to everyone. That&apos;s why we work hard to source the best vehicles and offer them at the most **competitive and honest prices**. Your journey starts here, with a team that genuinely cares about getting you the right set of wheels.
             </p>
           </div>
           <div className="bg-gray-100 p-8 rounded-xl shadow-lg">
@@ -138,4 +138,3 @@ export default function AboutPage() {
     </div>
   );
 }
-
