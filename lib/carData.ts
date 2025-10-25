@@ -397,6 +397,32 @@ export const allCars: Car[] = [
     ],
   },
   
+  {
+    id: "19",
+    name: "Nissan Dayz",
+    price: "740k",
+    imageUrl: "/cars/nissandayz1.jpeg",
+    altText: "Silver Nissan Dayz",
+    year: "2018",
+    engine: "650cc",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "nissan-dayz-2018",
+    description: `Compact, Stylish and reliable.
+    Fully loaded 360 degrees camera
+     G grade highway star`,
+    images: [
+      "/cars/nissandayz1.jpeg",
+      "/cars/nissandayz2.jpeg",
+      "/cars/nissandayz3.jpeg",
+      "/cars/nissandayz4.jpeg",
+      "/cars/nissandayz5.jpeg",
+      "/cars/nissandayz6.jpeg",
+      "/cars/nissandayz7.jpeg",
+    ],
+  },
+
+
    {
     id: "14",
     name: "Mazda Demio",
@@ -461,6 +487,32 @@ Limited Offer — Don’t Miss Out! ⏳`,
 
     ],
   },
+
+  {
+    id: "18",
+    name: "Suzuki Hustler",
+    price: "550K",
+    imageUrl: "/cars/hustler.jpeg",
+    altText: "Red Suzuki Hustler",
+    year: "2015",
+    engine: "650cc",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "suzuki-hustler-2015",
+    description: `Compact & Stylish | 💨 Smooth Drive | ⛽ Fuel Efficient 
+    | Extremely Clean | 🎥 Rear Camera`,
+    images: [
+      "/cars/hustler.jpeg",
+      "/cars/hustler1.jpeg",
+      "/cars/hustler2.jpeg",
+      "/cars/hustler3.jpeg",
+      "/cars/hustler4.jpeg",
+      "/cars/hustler5.jpeg",
+      "/cars/hustler6.jpeg",
+      "/cars/hustler7.jpeg",
+    ],
+  },
+
   {
     id: "16",
     name: "Toyota Probox 2016",
