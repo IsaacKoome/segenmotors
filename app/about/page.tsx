@@ -80,14 +80,9 @@ export default function AboutPage() {
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-lg text-gray-600 space-y-6">
-            <p>
-              Segen Motors was founded on a simple principle: to bring **transparency, quality, and trust** to the used car market in Nairobi. We recognized the need for a dealership where customers could feel confident and informed about their purchase, free from the uncertainties often associated with pre-owned vehicles.
-            </p>
+            
             <p>
               From our humble beginnings, we have grown into a reputable name by focusing relentlessly on **customer satisfaction** and the meticulous inspection of every single vehicle that enters our inventory. Our commitment goes beyond the sale; we aim to build lifelong relationships with our clients.
-            </p>
-            <p>
-              We believe that owning a reliable car should be accessible to everyone. That&apos;s why we work hard to source the best vehicles and offer them at the most **competitive and honest prices**. Your journey starts here, with a team that genuinely cares about getting you the right set of wheels.
             </p>
           </div>
           <div className="bg-gray-100 p-8 rounded-xl shadow-lg">
