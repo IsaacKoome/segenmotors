@@ -10,9 +10,9 @@ export interface Car {
   year?: string;
   engine: string;
   mileage?: string;
-  transmission: string;
-  fuelType: string;
-  linkSlug: string;
+  transmission?: string;
+  fuelType?: string;
+  linkSlug?: string;
   description?: string;
   images?: string[]; // ✅ NEW: Array of additional image URLs for gallery
 }
@@ -429,6 +429,38 @@ export const allCars: Car[] = [
       "/cars/mazdademio16.jpeg",
 
     ],
+  },
+  {
+    id: "15",
+    name: "Toyota Mark X",
+    price: "650K",
+    imageUrl: "/cars/toyotamarkx12.jpeg",
+    altText: "Black Toyota Mark X",
+    year: "2013",
+    engine: "2500cc",
+    linkSlug: "toyota-mark-X-2013",
+   description: `🎶 Premium Music System | 💻 10 Android Screen | ❄️ Functional AC
+💨 Smooth Drive | ⚡ Powerful Performance
+📍 Ridgeways, Tala Road off Kiambu Road
+Limited Offer — Don’t Miss Out! ⏳`,
+    images: [
+      "/cars/toyotamarkx1.jpeg",
+      "/cars/toyotamarkx.jpeg",
+      "/cars/toyotamarkx2.jpeg",
+      "/cars/toyotamarkx3.jpeg",
+      "/cars/toyotamarkx4.jpeg",
+      "/cars/toyotamarkx5.jpeg",
+      "/cars/toyotamarkx6.jpeg",
+      "/cars/toyotamarkx7.jpeg",
+      "/cars/toyotamarkx8.jpeg",
+      "/cars/toyotamarkx9.jpeg",
+      "/cars/toyotamarkx10.jpeg",
+      "/cars/toyotamarkx11.jpeg",
+      "/cars/toyotamarkx12.jpeg",
+      "/cars/toyotamarkx13.jpeg",
+
+    ],
+
   },
   
 ];
