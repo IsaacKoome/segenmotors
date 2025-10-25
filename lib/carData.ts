@@ -460,7 +460,69 @@ Limited Offer — Don’t Miss Out! ⏳`,
       "/cars/toyotamarkx13.jpeg",
 
     ],
+  },
+  {
+    id: "16",
+    name: "Toyota Probox 2016",
+    price: "950K",
+    imageUrl: "/cars/proboxkdk9.jpeg",
+    altText: "White Toyota Probox 2016",
+    year: "2016",
+    engine: "1300cc",
+    linkSlug: "toyota-probox-2016",
+    description: `Fuel Efficient | 🧳 Spacious & Practical | ❄️ Functional AC | 🎥 Rear Camera | 🔧 Reliable 
+    Performance Perfect for both business and personal use — built to last and easy to maintain! 💪🚘 
+    📍 Ridgeways, Tala Road off Kiambu road 
+    Toyota Probox — smart, strong, and ready to work`,
+    images: [
+      "/cars/proboxkdk.jpeg",
+      "/cars/proboxkdk1.jpeg",
+      "/cars/proboxkdk2.jpeg",
+      "/cars/proboxkdk3.jpeg",
+      "/cars/proboxkdk4.jpeg",
+      "/cars/proboxkdk5.jpeg",
+      "/cars/proboxkdk6.jpeg",
+      "/cars/proboxkdk7.jpeg",
+      "/cars/proboxkdk8.jpeg",
+      "/cars/proboxkdk9.jpeg",
+      "/cars/proboxkdk10.jpeg",
+      "/cars/proboxkdk11.jpeg",
+      "/cars/proboxkdk12.jpeg",
+      "/cars/proboxkdk13.jpeg",
+    ],
+  },
+  {
+    id: "17",
+    name: "Honda CR-V",
+    price: "1.25M",
+    imageUrl: "/cars/hondacrv12.jpeg",
+    altText: "Silver Honda CR-V",
+    year: "2010",
+    engine: "2400cc",
+    transmission: "Automatic",
+    fuelType: "Petrol",
+    linkSlug: "honda-crv-2010",
+    description: `Spacious Interior | 🚗 Smooth Ride | 🔊 Premium Sound System
+    🔧 Reliable Performance | 🚘 Perfect Family SUV
+    📍 Ridgeways, Tala Road off Kiambu Road
+Style, comfort, and power — all in one package! 🌟🚗
+   Don't miss out on this fantastic deal! ⏳`,
+    images: [
+      "/cars/hondacrv.jpeg",
+      "/cars/hondacrv1.jpeg",
+      "/cars/hondacrv2.jpeg",
+      "/cars/hondacrv3.jpeg",
+      "/cars/hondacrv4.jpeg",
+      "/cars/hondacrv5.jpeg",
+      "/cars/hondacrv6.jpeg",
+      "/cars/hondacrv7.jpeg",
+      "/cars/hondacrv8.jpeg",
+      "/cars/hondacrv9.jpeg",
+      "/cars/hondacrv10.jpeg",
+      "/cars/hondacrv11.jpeg",
+      "/cars/hondacrv12.jpeg",
 
+    ],
   },
   
 ];
