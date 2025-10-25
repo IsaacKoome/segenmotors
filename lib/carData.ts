@@ -418,7 +418,6 @@ export const allCars: Car[] = [
       "/cars/nissandayz4.jpeg",
       "/cars/nissandayz5.jpeg",
       "/cars/nissandayz6.jpeg",
-      "/cars/nissandayz7.jpeg",
     ],
   },
 
@@ -510,6 +509,8 @@ Limited Offer — Don’t Miss Out! ⏳`,
       "/cars/hustler5.jpeg",
       "/cars/hustler6.jpeg",
       "/cars/hustler7.jpeg",
+      "/cars/hustler8.jpeg",
+      "/cars/hustler9.jpeg",
     ],
   },
 
