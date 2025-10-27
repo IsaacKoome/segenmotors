@@ -18,9 +18,6 @@ export default function ContactPage() {
           <li>
             📞 <a href="tel:+254759500436" className="text-blue-600 hover:underline">0759 500 436</a>
           </li>
-          <li>
-            📞 <a href="tel:+254700119340" className="text-blue-600 hover:underline">0700 119 340</a>
-          </li>
         </ul>
       </div>
 
@@ -49,7 +46,7 @@ export default function ContactPage() {
   <h2 className="text-xl font-semibold mb-2">📍 Location</h2>
   <p className="text-gray-700 mb-2">
     🏢 <strong>Segen Motors</strong><br />
-    📍 Located at <strong>Wonderjoy, along Kiambu Road</strong>, Nairobi
+    📍 Located at <strong>Ridgeways, along Tala Road off Kiambu Road</strong>, Nairobi
   </p>
  <iframe
     src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.8980041245372!2d36.83531807404536!3d-1.2306596355659138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2ske!4v1761569372602!5m2!1sen!2ske"

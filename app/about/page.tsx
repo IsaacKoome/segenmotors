@@ -45,7 +45,7 @@ const locationDetails = [
   {
     icon: MapPin,
     title: "Our Location",
-    description: "Find us conveniently located in Along Kiambu Road in Ridgeways off Tala road. Visit our showroom to view our full inventory in person and meet our team.",
+    description: "Find us conveniently located Along Tala Road in Ridgeways off Kiambu Road. Visit our showroom to view our full inventory in person and meet our team.",
   },
   {
     icon: Clock,
