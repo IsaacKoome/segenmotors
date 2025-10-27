@@ -51,14 +51,14 @@ export default function ContactPage() {
     🏢 <strong>Segen Motors</strong><br />
     📍 Located at <strong>Wonderjoy, along Kiambu Road</strong>, Nairobi
   </p>
-  <a
-    href="https://maps.app.goo.gl/Aj8pKN6rWvJbgSdH7"  // replace with your real map link
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-blue-600 hover:underline"
-  >
-    👉 View on Google Maps
-  </a>
+ <iframe
+    src="https://maps.app.goo.gl/Aj8pKN6rWvJbgSdH7"
+    width="100%"
+    height="300"
+    allowFullScreen
+    loading="lazy"
+    className="rounded-md shadow"
+  ></iframe>
 </div>
     </div>
   );
