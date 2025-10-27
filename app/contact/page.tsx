@@ -44,23 +44,22 @@ export default function ContactPage() {
         </p>
       </div>
 
-      {/* Location */}
-      <div className="mb-6">
-        <h2 className="text-xl font-semibold mb-2">📍 Location</h2>
-        <p className="text-gray-700">
-          🏢 <strong>Segen Motors</strong><br />
-          📍 Located at <strong>Wonderjoy, along Kiambu Road</strong>, Nairobi
-        </p>
-      </div>
-
-      {/* Google Maps Placeholder */}
-      <div className="mt-6">
-        <h2 className="text-xl font-semibold mb-2">🗺️ Find Us on Google Maps</h2>
-        <p className="text-sm text-gray-600 mb-2">* Google Maps location integration coming soon</p>
-        <div className="border rounded-md h-64 flex items-center justify-center bg-gray-100 text-gray-400">
-          Google Maps Embed
-        </div>
-      </div>
+    {/* Location */}
+<div className="mb-6">
+  <h2 className="text-xl font-semibold mb-2">📍 Location</h2>
+  <p className="text-gray-700 mb-2">
+    🏢 <strong>Segen Motors</strong><br />
+    📍 Located at <strong>Wonderjoy, along Kiambu Road</strong>, Nairobi
+  </p>
+  <a
+    href="https://maps.app.goo.gl/Aj8pKN6rWvJbgSdH7"  // replace with your real map link
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 hover:underline"
+  >
+    👉 View on Google Maps
+  </a>
+</div>
     </div>
   );
 }
