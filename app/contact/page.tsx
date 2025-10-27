@@ -44,23 +44,22 @@ export default function ContactPage() {
         </p>
       </div>
 
-      {/* Location */}
-      <div className="mb-6">
-        <h2 className="text-xl font-semibold mb-2">📍 Location</h2>
-        <p className="text-gray-700">
-          🏢 <strong>Segen Motors</strong><br />
-          📍 Located at <strong>Wonderjoy, along Kiambu Road</strong>, Nairobi
-        </p>
-      </div>
-
-      {/* Google Maps Placeholder */}
-      <div className="mt-6">
-        <h2 className="text-xl font-semibold mb-2">🗺️ Find Us on Google Maps</h2>
-        <p className="text-sm text-gray-600 mb-2">* Google Maps location integration coming soon</p>
-        <div className="border rounded-md h-64 flex items-center justify-center bg-gray-100 text-gray-400">
-          Google Maps Embed
-        </div>
-      </div>
+    {/* Location */}
+<div className="mb-6">
+  <h2 className="text-xl font-semibold mb-2">📍 Location</h2>
+  <p className="text-gray-700 mb-2">
+    🏢 <strong>Segen Motors</strong><br />
+    📍 Located at <strong>Wonderjoy, along Kiambu Road</strong>, Nairobi
+  </p>
+ <iframe
+    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.8980041245372!2d36.83531807404536!3d-1.2306596355659138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2ske!4v1761569372602!5m2!1sen!2ske"
+    width="100%"
+    height="300"
+    allowFullScreen
+    loading="lazy"
+    className="rounded-md shadow"
+  ></iframe>
+</div>
     </div>
   );
 }
