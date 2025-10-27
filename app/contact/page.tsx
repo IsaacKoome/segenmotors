@@ -52,7 +52,7 @@ export default function ContactPage() {
     📍 Located at <strong>Wonderjoy, along Kiambu Road</strong>, Nairobi
   </p>
  <iframe
-    src="https://maps.app.goo.gl/Aj8pKN6rWvJbgSdH7"
+    src="https://maps.app.goo.gl/QY1RYp9m3234mSpt6?g_st=aw"
     width="100%"
     height="300"
     allowFullScreen
